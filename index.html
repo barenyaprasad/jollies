@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Showcase</title>
+  <style>
+    body {
+      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+    }
+    h1 {
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #333;
+    }
+    .book-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .book-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+      width: 220px;
+    }
+    .book-card:hover {
+      transform: scale(1.05);
+    }
+    .book-cover {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .book-title {
+      font-size: 20px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Explore Book Reviews</h1>
+
+  <div class="book-grid">
+
+    <!-- Book 1: The Great Gatsby -->
+    <a href="book-details.html" class="book-card">
+      <img class="book-cover" src="https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg" alt="The Great Gatsby">
+      <div class="book-title">The Great Gatsby</div>
+    </a>
+
+    <!-- Book 2: Rejection Proof -->
+    <a href="rejection-proof-details.html" class="book-card">
+      <img class="book-cover" src="https://m.media-amazon.com/images/I/81hGJdu6NeL._SL1500_.jpg" alt="Rejection Proof">
+      <div class="book-title">Rejection Proof</div>
+    </a>
+
+  </div>
+
+</body>
+</html>
